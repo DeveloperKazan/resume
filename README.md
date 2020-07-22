@@ -21,7 +21,7 @@ scan("resume.net.configuration") – Spring просканирует все фа
 //WebApplicationContext – это Spring IoC container, в котором есть beans controllers, //ViewResolver, HandlerMapping (на основании URL определяет соответствующий //контроллер). Он может также ссылаться на другой Spring IoC container с бинами //services, datasources etc. - применимо в архитектуре более сложного приложения
 
 Когда Spring полнимет context, в contextInitialized(ServletContextEvent) значение переменной @Value("${application.production}") запишется в атрибут context.
-К переменной можно обратиться в page-template.jsp через tag <h1>${production }</h1>  
+К переменной можно обратиться в page-template.jsp через tag<h1>${production }</h1>  
  
 class ResumeWebApplicationInitializer implements WebApplicationInitializer
 в методе которого registerSpringMVCDispatcherServlet регистрируется DispatherServlet с mapping “/” на ROOT. Можно использовать web.xml, но я использовал Java конфигурацию
