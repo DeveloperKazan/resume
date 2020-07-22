@@ -1,6 +1,7 @@
 DESCRIPTION OF PROGECT «RESUME»
 
 Установил зависимости в pom.xml: spring-context-support, spring-webmvc, hibernate-entitymanager и др. см. pom.xml
+
 class ServiceConfig с указанием в @ComponentScan пакетов, которые Spring должен просканировать.           
 @Bean static PropertySourcesPlaceholderConfigurer() указывает Spring текстовый ресурс с дополнительными настройками (файл application.properties). For example: class ApplicationListener для поля private boolean production, указано свойство для дополнительной настройки @Value("${application.production}"). 
 
